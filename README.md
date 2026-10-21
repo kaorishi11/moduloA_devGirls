@@ -123,31 +123,66 @@ O acesso a cada funcionalidade deve ser validado no backend, e não apenas ocult
 Uma possível organização dos arquivos é:
 
 ```text
-SENN-AI-X/
-├── config/
-│   └── database.php
-├── controllers/
-├── models/
-├── views/
-│   ├── dashboard/
-│   ├── entregas/
-│   ├── veiculos/
-│   ├── motoristas/
-│   ├── relatorios/
-│   └── auth/
-├── public/
-│   ├── css/
-│   │   └── style.css
-│   ├── js/
-│   │   └── app.js
-│   └── images/
-├── routes/
-├── database/
-│   └── database.sql
+moduloA_devGirls/
 ├── .env.example
-├── .gitignore
-├── index.php
-└── README.md
+├── README.md
+├── database/
+│   └── schema.sql
+├── public/
+│   ├── index.php
+│   ├── .htaccess
+│   ├── assets/
+│   │   ├── css/style.css
+│   │   ├── js/app.js
+│   │   └── img/logo.svg
+│   └── uploads/
+├── app/
+│   ├── config/
+│   │   ├── config.php
+│   │   └── database.php
+│   ├── core/
+│   │   ├── Router.php
+│   │   ├── Controller.php
+│   │   ├── Model.php
+│   │   ├── Auth.php
+│   │   └── Csrf.php
+│   ├── controllers/
+│   │   ├── AuthController.php
+│   │   ├── DashboardController.php
+│   │   ├── DeliveryController.php
+│   │   ├── VehicleController.php
+│   │   ├── DriverController.php
+│   │   ├── MapController.php
+│   │   ├── AiController.php
+│   │   ├── UserController.php
+│   │   ├── ReportController.php
+│   │   ├── AlertController.php
+│   │   ├── ProofController.php
+│   │   └── ImportController.php
+│   ├── models/
+│   │   ├── User.php
+│   │   ├── Delivery.php
+│   │   ├── Vehicle.php
+│   │   ├── Driver.php
+│   │   └── Alert.php
+│   └── views/
+│       ├── layouts/main.php
+│       ├── layouts/auth.php
+│       ├── auth/login.php
+│       ├── auth/register.php
+│       ├── dashboard/index.php
+│       ├── deliveries/index.php
+│       ├── vehicles/index.php
+│       ├── drivers/index.php
+│       ├── map/index.php
+│       ├── ai/index.php
+│       ├── users/index.php
+│       ├── reports/index.php
+│       ├── alerts/index.php
+│       ├── proofs/index.php
+│       └── import/index.php
+└── scripts/
+    └── init_demo.php
 ```
 
 A estrutura poderá ser adaptada conforme a implementação efetiva do sistema.
