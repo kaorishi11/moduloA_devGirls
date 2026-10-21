@@ -327,8 +327,9 @@ Em seguida:
 Verifique se as seguintes variáveis estão preenchidas corretamente:
 
 ```dotenv
-AI_API_ENDPOINT=https://api.groq.com/openai/v1/chat/completions
-AI_API_KEY=sua_chave_aqui
+GOOGLE_MAPS_API_KEY= AI....
+AI_API_ENDPOINT= https://api.groq.com/openai/v1/chat/completions
+AI_API_KEY= gsk...
 AI_MODEL=llama-3.3-70b-versatile
 ```
 
